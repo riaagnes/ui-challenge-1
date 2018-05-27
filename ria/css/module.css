@@ -1,0 +1,85 @@
+section div h3, footer h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main > p {
+  padding: 1em 0;
+  margin: .5em 0 0 0;
+}
+.desktop-view {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  section div {
+    border-bottom: none;
+  }
+  section.cols-4 div:nth-child(odd) {
+    border-right: none;
+  }
+}
+@media only screen and (min-width: 800px) { 
+  body {
+    height: 110vh;
+    margin: 0 auto;
+    max-width: 980px;
+  }
+  main > p:nth-child(2) {
+  display: block;
+  padding: 1em 0;
+  margin: .5em 0 0 0;
+}
+main > p:nth-child(1) {
+  display: none;
+}
+  section.a {
+    height: 100px;
+  }
+  section.a div {
+    border-bottom: none;
+  }
+  section.b {
+    float: left;
+    height: 600px;
+    width: 20.83%;
+  }
+  section.b div {
+    border-right: none;
+  }
+  section.c, section.d {
+    float: left; 
+    height: 200px;
+    width: 39.583%;
+  }
+  section.c div, section.d div {
+    border-bottom: none;
+  }
+  section.c div {
+    border-right: none;
+  }
+  section.cols-4 {
+    float: left;
+    overflow: auto;
+    width: 79.16%;
+  }
+  section.cols-4 div {
+    width: 25%;
+  }
+  section.cols-4 div:not(:last-child) {
+    border-right: none;
+  }
+  footer {
+    border-top: none;
+    float: left; 
+    width: 79.16%;
+    height: 150px;
+  }
+  .desktop-view {
+    display: block;
+  }
+  .mobile-view {
+    display: none;
+  }
+}

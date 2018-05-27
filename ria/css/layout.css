@@ -1,0 +1,23 @@
+.full-width-box {
+  width: 100%;
+}
+section div {
+  background: lightgray;
+  height: 100%;
+  border: solid 1px #999999;
+  position: relative;
+}
+section.a {
+  height: 75px;
+}
+section.b {
+  height: 150px;
+}
+section.c, section.d {
+  height: 125px;
+}
+section.cols-2 div {
+  float: left;
+  height: 250px;
+  width: 50%;
+}
