@@ -1,20 +1,23 @@
-.a{
-
-  height:100px;
-  border:1px black solid;
-  box-sizing: border-box;
+.full-width-box {
   width: 100%;
 }
-.container{
-  width: 480px;
- display:flex;
- flex-wrap: wrap;
+section div {
+  background: lightgray;
+  height: 100%;
+  border: solid 1px #999999;
+  position: relative;
 }
-.e{
-  flex:1;
+section.a {
+  height: 75px;
 }
-/* .container2{
-  width: 480px;
-  display:flex;
-
-} */
+section.b {
+  height: 150px;
+}
+section.c, section.d {
+  height: 125px;
+}
+section.cols-2 div {
+  float: left;
+  height: 250px;
+  width: 50%;
+}
